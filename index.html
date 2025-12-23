@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueShuffle Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="top-bar">
+                <h1>Music</h1>
+                <div class="icons">🔍 ⋮</div>
+            </div>
+            <nav class="tabs">
+                <span class="active">Songs</span>
+                <span>Artists</span>
+                <span>Albums</span>
+            </nav>
+        </header>
+
+        <div class="action-bar">
+            <label for="folder-upload" class="shuffle-main">📁 Load Folder</label>
+            <input type="file" id="folder-upload" webkitdirectory directory multiple hidden>
+            <button id="shuffle-btn" class="shuffle-main" style="display:none;">🔀 True Shuffle</button>
+            <span id="song-count" class="song-count">0 songs</span>
+        </div>
+
+        <div class="song-list" id="song-list-container">
+            <p style="text-align:center; color:#666; margin-top:50px;">Load your music folder to start.</p>
+        </div>
+
+        <footer class="mini-player">
+            <div class="progress-container">
+                <div id="progress-bar"></div>
+            </div>
+            <div class="now-playing-info">
+                <div class="album-art-mini">🎵</div>
+                <div class="text">
+                    <b id="track-name">Select a song</b>
+                    <p id="track-status">True Shuffle Active</p>
+                </div>
+            </div>
+            <div class="player-controls">
+                <button id="prev-btn" class="ctrl-btn">⏮</button>
+                <button id="play-pause-btn" class="ctrl-btn">▶️</button>
+                <button id="next-btn" class="ctrl-btn">⏭</button>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
