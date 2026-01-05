@@ -2,7 +2,6 @@
 
 A modern web-based music player designed to solve the "bad shuffle" problem. Unlike mainstream apps that use pseudo-random algorithms, **TrueShuffle** uses a mathematical approach to ensure zero song repetitions.
 
-![App Screenshot](screenshot.jpg)
 
 ##  The Feature: "True Shuffle"
 Most apps use algorithms that can play the same song multiple times in a short window. This app implements the **Fisher-Yates Shuffle** algorithm:
@@ -21,6 +20,7 @@ Most apps use algorithms that can play the same song multiple times in a short w
 - CSS3 (Responsive Design)
 
 - JavaScript (Shuffle Logic & DOM Manipulation)
+
 
 
 
